@@ -6,3 +6,6 @@ http://134.209.229.112:3001/leads/business-account/monitor-report
 http://134.209.229.112:3001/leads/business-account/build-business-entry
 http://134.209.229.112:3001/leads/business-account/build-business-credit
 http://134.209.229.112:3001/leads/business-account/build-business-address
+http://134.209.229.112:3001/leads/business-account/build-business-ein
+http://134.209.229.112:3001/leads/business-account/build-business-phone
+http://134.209.229.112:3001/leads/business-account/build-business-email

@@ -46,7 +46,7 @@ const revolving = [];
 
 export const MonitorReportForm = () => (
     <>
-        <div className="flex flex-col w-full px-6 justify-start border-2 border-blue-600 rounded-2xl pt-8">
+        <div className="flex flex-col w-full h-max px-6 justify-start border-2 border-blue-600 rounded-2xl pt-8">
             {/* step 1 */}
             <p className="text-blue-500">Step1</p>
             <div className="flex flex-row w-full pl-2">

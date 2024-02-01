@@ -8,6 +8,7 @@ import { EditableContentRecordInvidual } from "@/components/business-account-ele
 import { EditableContentRecord } from "@/components/business-account-elements/edaitable.content.record";
 import { SelectCard } from "@/components/cards/select.card";
 import { BlogCardRight, BlogCardLeft } from "@/components/cards/blog.card";
+import { DownloadCard } from "@/components/business-account-elements/dwonload.card";
 
 const videoConten = {
   title: "Watch Video Transcript:",
@@ -124,6 +125,7 @@ export default function Page() {
         <EditableContentRecordInvidual invidualRecord={invidualRecords} />
         <EditableContentRecord records={records} />
         <SelectCard content={selectCardProps.content} />
+        <DownloadCard />
         {/* <BlogCardRight /> */}
         <BlogCardLeft content={contentBlogCardLeft} />
         <div className="mt-10"></div>
