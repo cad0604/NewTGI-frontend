@@ -59,8 +59,8 @@ export const BlogCardLeft: React.FC<BlogCardProps> = (props) => {
     return (
         <>
             <div className="flex w-full">
-                <div className="flex flex-row border-2 rounded-lg overflow-hidden mb-4 shadow-sm py-16 relative">
-                    <div className="flex w-[40%] justify-center content-center items-center">
+                <div className="flex flex-row border-2 rounded-lg overflow-hidden mb-4 shadow-sm py-16 px-6 relative">
+                    <div className="flex w-[50%] justify-center content-center items-center">
                         <Image src={props.content.picture} objectFit="contain" alt="ssa" width={600} height={450} />
                     </div>
                     <div className="flex flex-col p-4 w-[60%] justify-center content-center items-center">
@@ -149,6 +149,42 @@ export const BlogEmailCardLeft: React.FC<BlogEmailCardProps> = (props) => {
                         </div>
 
                         <p className="mb-1 text-gray-500 text-sm">{props.content.content2}</p>
+                    </div>
+                </div>
+            </div>
+
+        </>
+    )
+}
+
+interface BlogCustomCardProps {
+    content: {
+        picture: string,
+        title: string,
+        contents: {
+            dataString: string,
+            dataColor: string,
+            dataSize: string,
+        }[],
+    }
+}
+
+export const BlogCustomCardLeft: React.FC<BlogCustomCardProps> = (props) => {
+    return (
+        <>
+            <div className="flex w-full">
+                <div className="flex flex-row w-full border-0 rounded-lg overflow-hidden mb-4 shadow-sm py-7 px-4 relative">
+                    <div className="flex w-[50%] justify-center content-center items-center">
+                        {/* <Image src={props.content.picture} objectFit="fill" alt="ssa" /> */}
+                        <img src={props.content.picture} alt="" style={{}} />
+                    </div>
+                    <div className="flex flex-col p-4 w-[50%] justify-center content-center items-center">
+                        <strong className="mb-2 text-blue-500">{props.content.title}</strong>
+                        {
+                            props.content.contents.map((invidualContent) => (
+                                <p className={`mb-1 text-sm ${invidualContent.dataColor} ${invidualContent.dataSize} my-2`}>{invidualContent.dataString}</p>
+                            ))
+                        }
                     </div>
                 </div>
             </div>

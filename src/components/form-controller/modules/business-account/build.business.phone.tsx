@@ -33,6 +33,7 @@ const records = {
     invidualRecords: [
         {
             title: "Business Phone Number / Toll Free Number",
+            icon: "",
             contents: [
                 {
                     recordName: "(877)-427-5549",
@@ -42,6 +43,7 @@ const records = {
         },
         {
             title: "Phone Sevice Provider",
+            icon: "",
             contents: [
                 {
                     recordName: "Evoiced",
@@ -51,6 +53,7 @@ const records = {
         },
         {
             title: "Fax Number",
+            icon: "",
             contents: [
                 {
                     recordName: "(654)-477-7888",

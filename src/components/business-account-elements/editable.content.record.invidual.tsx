@@ -4,12 +4,14 @@ import { EditOff, Edit, DateRangeSharp } from "@mui/icons-material";
 import { IconButton, Input } from "@mui/material";
 import { DateCalendar } from "@mui/x-date-pickers";
 import { ArrowDown, ArrowDown2 } from "iconsax-react";
+import Image from "next/image";
 
 import { useState, useEffect } from "react";
 
 interface EditableContentRecordInvidualProps {
     invidualRecord: {
         title: string,
+        icon: string,
         contents: {
             recordName: string,
             iconName: string,           //edit, arrow, date
@@ -41,7 +43,12 @@ export const EditableContentRecordInvidual: React.FC<EditableContentRecordInvidu
         <>
             <div className="flex flex-col w-full justify-center content-center items-center">
                 {props.invidualRecord.title !== "" &&
-                    <div className="flex w-full text-blue-400 text-lg mt-4">{props.invidualRecord.title}</div>
+                    <div className="flex flex-row w-full justify-start mt-4">
+                        {props.invidualRecord.icon !== "" &&
+                            <Image src={props.invidualRecord.icon} alt="" width={30} height={30} />
+                        }
+                        <div className="flex w-full text-blue-400 text-lg ml-2">{props.invidualRecord.title}</div>
+                    </div>
                 }
                 <div className="flex flex-col w-[95%]">
                     {props.invidualRecord.contents.map((content, key) => (

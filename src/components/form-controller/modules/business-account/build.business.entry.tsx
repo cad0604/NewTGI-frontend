@@ -34,6 +34,7 @@ const records = {
     invidualRecords: [
         {
             title: "Entity Type:",
+            icon: "",
             contents: [
                 {
                     recordName: "Corporation(S Or C)",
@@ -43,6 +44,7 @@ const records = {
         },
         {
             title: "Industry:",
+            icon: "",
             contents: [
                 {
                     recordName: "11210",
@@ -52,6 +54,7 @@ const records = {
         },
         {
             title: "Date Incorporated",
+            icon: "",
             contents: [
                 {
                     recordName: "9/18/2018",

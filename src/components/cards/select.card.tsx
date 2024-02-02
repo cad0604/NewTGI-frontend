@@ -54,3 +54,29 @@ export const SelectCard: React.FC<SelectCardProps> = (props) => {
         </>
     )
 }
+
+interface SelectCardInvidualProps {
+    content: {
+        contents1: string,
+    }
+}
+
+export const SelectCardInvidual: React.FC<SelectCardInvidualProps> = (props) => {
+    return (
+        <>
+            <div className="flex flex-col  w-64 h-52 justify-center content-center ">
+                <div className="flex w-full pt-6 px-4 justify-center content-center h-32">{props.content.contents1}</div>
+                <div className="flex flex-row w-full px-8">
+                    <div className="flex w-[3rem] ml-4 justify-start">
+                        <Input type="radio" name="group1" />
+                    </div>
+                    <div className="flex ml-4">Yes</div>
+                    <div className="flex w-full mr-4 justify-end">
+                        <Input type="radio" name="group1" />
+                    </div>
+                    <div className="flex w-max mr-8 justify-end">No</div>
+                </div>
+            </div>
+        </>
+    )
+}

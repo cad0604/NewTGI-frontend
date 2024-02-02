@@ -33,6 +33,7 @@ const records = {
     invidualRecords: [
         {
             title: "",
+            icon: "",
             contents: [
                 {
                     recordName: "1900 Albany Ave",
@@ -64,6 +65,7 @@ const recordsType = {
     invidualRecords: [
         {
             title: "",
+            icon: "",
             contents: [
                 {
                     recordName: "Home",

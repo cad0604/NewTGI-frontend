@@ -33,6 +33,7 @@ const records = {
     invidualRecords: [
         {
             title: "Business Website",
+            icon: "",
             contents: [
                 {
                     recordName: "swurvin.com",
@@ -42,6 +43,7 @@ const records = {
         },
         {
             title: "Business Email",
+            icon: "",
             contents: [
                 {
                     recordName: "payment@swuvin.com",

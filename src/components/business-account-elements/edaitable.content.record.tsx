@@ -6,6 +6,7 @@ interface EditableContentRecordProps {
         method: string,
         invidualRecords: {
             title: string,
+            icon: string,
             contents: {
                 recordName: string,
                 iconName: string,           //edit, arrow, date

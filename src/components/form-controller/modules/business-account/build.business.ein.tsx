@@ -35,6 +35,7 @@ const records = {
     invidualRecords: [
         {
             title: "EIN# Number:",
+            icon: "",
             contents: [
                 {
                     recordName: "82-3496580",
