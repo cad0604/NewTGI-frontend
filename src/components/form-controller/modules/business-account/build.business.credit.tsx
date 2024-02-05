@@ -53,7 +53,7 @@ export const BuildBusinessCredit = () => {
                 <div className="flex flex-col w-[76%] justify-start mt-6">
                     <SubHeader content={headerContent} />
                     <div className="flex flex-col w-full px-2 justify-center items-center content-center mt-6">
-                        <ArrowLineText type="flex flex-col w-max text-gray-700" content="DO YOU HAVE A BUSINESS NAME?" />
+                        <ArrowLineText type="flex flex-col w-[80%] text-center text-gray-700" content="DO YOU HAVE A BUSINESS NAME?" />
                         {/* Vidio card */}
                         <div className="flex flex-row w-full">
                             <div className="flex w-[50%] justify-start">
@@ -71,7 +71,7 @@ export const BuildBusinessCredit = () => {
 
                         {/* line string */}
                         <div className="flex w-full my-12 justify-center">
-                            <ArrowLineText type="flex flex-col w-max text-gray-500" content="ENTER BUSINESS NAME?" />
+                            <ArrowLineText type="flex flex-col w-[80%] text-center text-gray-500" content="ENTER BUSINESS NAME?" />
                         </div>
                         <Input placeholder="" defaultValue={"Type your business name here"} className="flex w-[80%] my-8 text-gray-500" aria-hidden />
                         {/* general cards */}

@@ -15,7 +15,7 @@ interface AccountPersonItemProos {
 export const AccountPersonItem: React.FC<AccountPersonItemProos> = (props) => {
     return (
         <>
-            <div className="flex flex-col w-full justify-center content-center items-center">
+            <div className="flex flex-col w-full justify-center content-center items-center text-center">
                 <div className="flex w-28 h-28 bg-blue-700 justify-center content-center items-center rounded-full">
                     {props.personItem.icon === 'scaling' && 
                         <Scale style={{fontSize: '4rem', color: 'rgb(255, 255, 255)'}} />

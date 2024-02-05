@@ -67,7 +67,7 @@ export const BuildBusinessBank = () => {
                 <div className="flex flex-col w-[76%] justify-start mt-6">
                     <SubHeader content={headerContent} />
                     <div className="flex flex-col w-full px-2 justify-center items-center content-center mt-6">
-                        <ArrowLineText type="flex flex-col w-max text-gray-700" content="DO YOU HAVE A BUSINESS BANK ACCOUNT?" />
+                        <ArrowLineText type="flex flex-col w-[80%] text-center text-gray-700" content="DO YOU HAVE A BUSINESS BANK ACCOUNT?" />
                         {/* Vidio card */}
                         <VideoCard videoContent={videoConten} />
 

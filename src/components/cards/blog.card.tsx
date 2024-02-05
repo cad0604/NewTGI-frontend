@@ -179,10 +179,56 @@ export const BlogCustomCardLeft: React.FC<BlogCustomCardProps> = (props) => {
                         <img src={props.content.picture} alt="" style={{}} />
                     </div>
                     <div className="flex flex-col p-4 w-[50%] justify-center content-center items-center">
-                        <strong className="mb-2 text-blue-500">{props.content.title}</strong>
+                        <strong className="mb-2 text-blue-500 text-center">{props.content.title}</strong>
                         {
                             props.content.contents.map((invidualContent) => (
-                                <p className={`mb-1 text-sm ${invidualContent.dataColor} ${invidualContent.dataSize} my-2`}>{invidualContent.dataString}</p>
+                                // <p className={`mb-1 text-sm ${invidualContent.dataColor} ${invidualContent.dataSize} my-2`}>{invidualContent.dataString}</p>
+                                <div className={`mb-1 text-sm ${invidualContent.dataColor} ${invidualContent.dataSize} my-2`} dangerouslySetInnerHTML={{ __html: invidualContent.dataString}}></div>
+                            ))
+                        }
+                    </div>
+                </div>
+            </div>
+
+        </>
+    )
+}
+
+interface BlogCustomCardBoldProps {
+    content: {
+        picture: string,
+        title: string,
+        contents: {
+            dataString: string,
+            dataColor: string,
+            dataSize: string,
+        }[],
+    }
+}
+
+export const BlogCustomCardBoldLeft: React.FC<BlogCustomCardBoldProps> = (props) => {
+    const makeBold = (item: string, keyword: string) => {
+        let re = new RegExp(keyword, 'g');
+        return (
+            item.replace(re, '<b>' + keyword + '</b>')
+        )
+    }
+
+    console.log(makeBold(props.content.contents[0].dataString, "Ti"));
+    return (
+        <>
+            <div className="flex w-full">
+                <div className="flex flex-row w-full border-0 rounded-lg overflow-hidden mb-4 shadow-sm py-7 px-4 relative">
+                    <div className="flex w-[50%] justify-center content-center items-center">
+                        {/* <Image src={props.content.picture} objectFit="fill" alt="ssa" /> */}
+                        <img src={props.content.picture} alt="" style={{}} />
+                    </div>
+                    <div className="flex flex-col p-4 w-[50%] justify-center content-center items-center">
+                        <strong className="mb-2 text-blue-500 text-center">{props.content.title}</strong>
+                        {
+                            props.content.contents.map((invidualContent) => (
+                                // <p className={`mb-1 text-sm ${invidualContent.dataColor} ${invidualContent.dataSize} my-2`}>{makeBold(invidualContent.dataString, 'Ti') }</p>
+                                <div className={`mb-1 text-sm ${invidualContent.dataColor} ${invidualContent.dataSize} my-2`} dangerouslySetInnerHTML={{ __html: makeBold(invidualContent.dataString, 'Ti') }}></div>
                             ))
                         }
                     </div>

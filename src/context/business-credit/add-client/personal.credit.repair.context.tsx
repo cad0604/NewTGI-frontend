@@ -53,7 +53,7 @@ export const ACContextProvider = ({
   const [h4, SetMobileH4] = useState("");
   const router = useRouter();
   const pathname = usePathname();
-  const isVisible = pathname === "/leads/business-credit/add-client/option4";
+  const isVisible = pathname === "/leads/business-credit/add-client/option3";
   const page = () => {
     const currentPage =
       DesktopBusinessCreditAddClientPages[pathname as keyof DesktopBusinessCreditAddClientPagesType] ||
@@ -145,7 +145,7 @@ export const ACContextProvider = ({
                 <LinkOption linkData={linkArray[0]} />
                 <LinkOption linkData={linkArray[1]} />
               </div>
-              <div className="flex w-full justify-center content-center items-center mt-6">
+              <div className="flex w-full justify-center content-center items-center mt-6 mb-8">
                 <div className="w-[40%]"><LinkOption linkData={linkArray[2]} /></div>
               </div>
             </div>

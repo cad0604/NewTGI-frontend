@@ -15,12 +15,12 @@ export const DesktopAddClientStepper = () => {
     {
       label: "  Business Credit Builder",
       desc: "  (It requires...)",
-      imgURL: "https://via.placeholder.com/19x19",
+      imgURL: "/business-account/step1.svg",
     },
     {
       label: "  Finance Blue Print(Only)",
       desc: "  (It requires...)",
-      imgURL: "https://via.placeholder.com/26x26",
+      imgURL: "/business-account/step2.svg",
     },
   ];
   return (

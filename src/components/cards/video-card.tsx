@@ -20,7 +20,7 @@ export const VideoCard: React.FC<VideoCardProps> = (props) => {
                     <div className=" relative w-full h-56 rounded-2xl ">
                         <Image src={props.videoContent.videoUrl} layout="fill" objectFit="cover" alt="" className=" rounded-xl" />
                         <div className="flex flex-col h-full justify-center  content-center items-center w-full relative">
-                            <div className="flex w-max bg-blue-500 p-3 rounded-lg text-white mb-4">{props.videoContent.content}</div>
+                            <div className="flex w-[80%] text-center bg-blue-500 p-3 rounded-lg mx-[12] text-white mb-4">{props.videoContent.content}</div>
                             {/* <Image src="/business-account/bank.svg" objectFit="contain" alt="" width={40} height={40} /> */}
                             <IconButton aria-label="play video" color="primary" style={{fontSize:'4rem'}}>
                                 <PlayCircleOutline fontSize="inherit"/>

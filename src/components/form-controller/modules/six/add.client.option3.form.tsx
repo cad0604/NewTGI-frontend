@@ -12,7 +12,7 @@ import { ApiCalls } from "@/api/calls/calls";
 import { Calls } from "@/api/calls/type";
 import Autocomplete from "@mui/material/Autocomplete";
 import { states } from "@/data/ states";
-import { Visibility, VisibilityOff } from "@mui/icons-material";
+import { QuestionAnswerOutlined, Visibility, VisibilityOff } from "@mui/icons-material";
 import { Checkbox, Typography } from "@material-tailwind/react";
 import { usePCR } from "@/context/onboarding/personal.credit.repair.context";
 import { useAC } from "@/context/business-credit/add-client/personal.credit.repair.context";
@@ -20,6 +20,7 @@ import { handleFormError } from "@/utils/error";
 import toast from "react-hot-toast";
 import Cookies from "js-cookie";
 import { useRouter } from "next/navigation";
+import { QuestionMarkCircleIcon } from "@heroicons/react/24/outline";
 interface Option {
   label: string;
 }
@@ -124,13 +125,13 @@ export const AddClientOption3Form = () => {
               <b>Join With Premier Partner Affiliate Lead Links:</b>
             </div>
             <div className="w-full flex flex-row">
-              <div className=" w-5 h-5 bg-black"></div>
+              <div className=" w-5 h-5 "><QuestionMarkCircleIcon /></div>
               <div className="pl-2">
                 Friends, contacts, acquaintances that could benefit from our products and services?
               </div>
             </div>
             <div className="w-full flex flex-row">
-              <div className=" w-5 h-5 bg-black"></div>
+              <div className=" w-5 h-5 "><QuestionMarkCircleIcon /></div>
               <div className="pl-2 text-base">
                 Looking to generate more income without building a sales team?
               </div>

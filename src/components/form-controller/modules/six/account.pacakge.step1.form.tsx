@@ -66,22 +66,22 @@ export const AccountPackageStep1Form = () => {
     },
     {
       icon: "tailored",
-      title: "SCALING SPECIALISTS",
+      title: "TAILORED SOLUTIONS",
       subtitle: "Our strategies are customized to your unique credit goals and needs"
     },
     {
       icon: "proven",
-      title: "SCALING SPECIALISTS",
+      title: "PROVEN OUTCOMES",
       subtitle: "Our track record of success showcases the results we deliver"
     },
     {
       icon: "transparent",
-      title: "SCALING SPECIALISTS",
+      title: "TRANSPARENT PROGRESS",
       subtitle: "Scaling your credit means unlocking better opportunities and financial freedom"
     },
     {
       icon: "unleash",
-      title: "SCALING SPECIALISTS",
+      title: "UNLEASH FINANCIAL POTENTIAL",
       subtitle: "Stay updated on your scaling journey with regular progress reports."
     },
   ];
