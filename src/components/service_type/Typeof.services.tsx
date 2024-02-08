@@ -21,7 +21,7 @@ export const TypeofServices = () => {
           <p className={"text-white"}>Personal Credit Repair</p>
         </Link>
         <Link
-          href={"/business-credit"}
+          href={"/business-account"}
           className={
             "cursor-pointer select-none  hover:ring-1 ring-[#2684ff] flex flex-col justify-center items-center rounded-[28px]   bg-white p-2 w-60 h-60"
           }
