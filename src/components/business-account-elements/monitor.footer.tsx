@@ -1,6 +1,8 @@
 import { Button } from "@mui/material"
 import { DownloadCard } from "./dwonload.card"
 import { MonitorRecord } from "./monitor.record"
+import React from "react";
+import Link from "next/link";
 
 const monitorRecord = {
     contents: [
@@ -37,7 +39,11 @@ const monitorRecord = {
     ],
 }
 
-export const MonitorFooter = () => {
+interface MonitorFooterProps {
+    url: string;
+}
+
+export const MonitorFooter : React.FC<MonitorFooterProps> = (props) => {
     return (
         <>
             <div className="flex flex-col w-full justify-center">
@@ -57,9 +63,11 @@ export const MonitorFooter = () => {
                     </div>
 
                 </div>
-                <p className="flex w-full text-red-400 underline mt-4 justify-center mb-3">Not sure? Click To View Business Credit Reports</p>
+                <Link href={"/step7/page1-min"}><p className="flex w-full text-red-400 underline mt-4 justify-center mb-3">Not sure? Click To View Business Credit Reports</p></Link>
                 <div className="flex w-full justify-center">
-                    <button className="px-6 py-4 outline outline-1 outline-gray-200 rounded-3xl text-4xl text-gray-300 w-[40rem]">CONTINUE TO NEXT STEP</button>
+                    <div className="flex w-72 mt-10">
+                    <Button variant="outlined" href={props.url} className="px-6 py-4 outline outline-1 outline-gray-200 rounded-3xl text-4xl text-gray-300 w-[40rem]">CONTINUE TO NEXT STEP</Button>
+                    </div>
                 </div>
             </div>
         </>

@@ -81,6 +81,7 @@ const footerContent = {
     previous: true,
     next: true,
     url: "/step2/experian",
+    preUrl: "/step2/dun-bradstreet",
 }
 
 export const BusinessReportDunBradstreet = () => {

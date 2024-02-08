@@ -42,6 +42,7 @@ const footerContent = {
     previous: false,
     next: true,
     url: "/step1/build-business-address",
+    preUrl: "/business-account",
 }
 interface Option {
     label: string;

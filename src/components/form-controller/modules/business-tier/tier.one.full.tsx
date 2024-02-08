@@ -475,7 +475,7 @@ export const TierOneFull = () => {
           </div>
         </div>
         <div className="flex w-full mt-6">
-          <MonitorFooter />
+          <MonitorFooter  url="/step7/page2-full" />
         </div>
       </div>
     </>

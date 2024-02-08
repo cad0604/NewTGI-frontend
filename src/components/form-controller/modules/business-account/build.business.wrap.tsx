@@ -30,6 +30,7 @@ const footerContent = {
     previous: true,
     next: true,
     url: "/step1/monitor-report",
+    preUrl: "/step1/build-business-merchant",
 }
 
 export const BuildBusinessWrap = () => {

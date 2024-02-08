@@ -103,6 +103,8 @@ const footerContent = {
     content: "Return To Business Credit Builder",
     previous: true,
     next: true,
+    url: "/step4/lexis-nexis",
+    preUrl: "/step4/experian",
 }
 interface Option {
     label: string;

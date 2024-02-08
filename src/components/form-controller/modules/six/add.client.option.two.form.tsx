@@ -24,6 +24,7 @@ import { SortByAlpha } from "@mui/icons-material";
 import { ChevronDownIcon } from "@heroicons/react/24/outline";
 import { AddClientInformation } from "@/components/business_credit_elements/add-client/client.information";
 import { AddClientInformationCard } from "@/components/business_credit_elements/add-client/client.information.card";
+import Link from "next/link";
 interface Option {
   label: string;
 }
@@ -118,7 +119,7 @@ export const AddClientOptionTwoForm = () => {
               <div className="flex w-max">
                 <TextField label="Search by name" style={{ marginTop: '1rem' }} />
               </div>
-              <Button className="h-6 mt-8 pb-6 bg-blue-600">ADD CLIENTS</Button>
+              <Link href={"/admin/option2"}><Button className="h-6 mt-8 pb-6 bg-blue-600">ADD CLIENTS</Button></Link>
           </div>
         </div>
 

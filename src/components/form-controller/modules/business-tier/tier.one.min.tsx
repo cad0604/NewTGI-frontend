@@ -177,11 +177,6 @@ const monitorCardGroup = [
   },
 ]
 
-const footerContent = {
-  content: "Return To Business Credit Builder",
-  previous: true,
-  next: true,
-}
 interface Option {
   label: string;
 }
@@ -240,7 +235,7 @@ export const TierOneMin = () => {
           </div>
         </div>
         <div className="flex w-full mt-6">
-          <MonitorFooter />
+          <MonitorFooter url="/step7/page1-full" />
         </div>
       </div>
     </>

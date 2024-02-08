@@ -113,6 +113,8 @@ const footerContent = {
     content: "Return To Business Credit Builder",
     previous: true,
     next: true,
+    url: "/step4/experian",
+    preUrl: "/step4/credit",
 }
 interface Option {
     label: string;

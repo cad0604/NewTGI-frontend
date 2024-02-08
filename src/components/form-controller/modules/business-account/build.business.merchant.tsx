@@ -58,6 +58,7 @@ const footerContent = {
     previous: true,
     next: true,
     url: "/step1/build-business-wrap",
+    preUrl: "/step1/build-business-bank",
 }
 
 export const BuildBusinessMerchant = () => {

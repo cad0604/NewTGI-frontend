@@ -87,9 +87,9 @@ export const AddClientOption2Form = () => {
     },
   });
   const onSubmit: FormEventHandler<HTMLFormElement> = async (e) => {
-    e.preventDefault();
-    console.log(form.originalData);
-    await mutateAsync(form.originalData);
+    // e.preventDefault();
+    // console.log(form.originalData);
+    //await mutateAsync(form.originalData);
   };
   useLayoutEffect(() => {
     SetFormID("sign-up");

@@ -445,7 +445,7 @@ export const TierFourFull = () => {
           </div>
         </div>
         <div className="flex w-full mt-6">
-          <MonitorFooter />
+          <MonitorFooter url="#"/>
         </div>
       </div>
     </>

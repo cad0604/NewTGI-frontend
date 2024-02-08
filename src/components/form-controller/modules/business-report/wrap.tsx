@@ -60,7 +60,8 @@ const footerContent = {
     content: "Return To Business Credit Builder",
     previous: true,
     next: true,
-    url: "/step4/wrap"
+    url: "/step4/credit",
+    preUrl: "/step2/equifax",
 }
 
 export const BusinessReportWrap = () => {

@@ -11,6 +11,7 @@ interface SubFormFooterProps {
         previous: boolean,
         next: boolean,
         url: string,
+        preUrl: string,
     }
 }
 
@@ -22,7 +23,7 @@ export const SubFormFooter: React.FC<SubFormFooterProps> = (props) => {
                 <div className="flex w-full justify-end mr-4">
                     {props.content.previous &&
                         <div className="flex w-36 mr-6">
-                            <Button variant="outlined" startIcon={<ArrowLeft />} color="secondary">Back</Button>
+                            <Button href={props.content.preUrl} variant="outlined" startIcon={<ArrowLeft />} color="secondary">Back</Button>
                         </div>
                     }
                     {props.content.next &&

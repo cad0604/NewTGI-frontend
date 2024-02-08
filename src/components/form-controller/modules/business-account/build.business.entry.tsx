@@ -88,6 +88,7 @@ const footerContent = {
     previous: true,
     next: true,
     url: "/step1/build-business-ein",
+    preUrl: "/step1/build-business-address",
 }
 
 export const BuildBusinessEntry = () => {

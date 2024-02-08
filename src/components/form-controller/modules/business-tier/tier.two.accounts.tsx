@@ -2,6 +2,7 @@
 // @ts-ignore
 import React from "react";
 import { MonitorCardGroup } from "@/components/cards/monitor.card.group";
+import Link from "next/link";
 
 const monitorCardGroup = [
   {
@@ -376,7 +377,7 @@ export const TierTwoAccounts = () => {
 
             {/* show button */}
             <div className="flex w-full my-20 justify-center items-center content-center">
-              <button><img src="/monitor/bt-showmore.svg" alt="" className=" flex w-36 h-36 " /></button>
+              <Link href="/step7/page3-full"><button><img src="/monitor/bt-showmore.svg" alt="" className=" flex w-36 h-36 " /></button></Link>
             </div>
           </div>
       </div>

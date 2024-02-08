@@ -74,6 +74,7 @@ const footerContent = {
     previous: true,
     next: true,
     url: "/step1/build-business-license",
+    preUrl: "/step1/build-business-phone",
 }
 
 export const BuildBusinessEmail = () => {

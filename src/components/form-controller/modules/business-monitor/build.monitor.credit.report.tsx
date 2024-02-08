@@ -21,6 +21,8 @@ const footerContent = {
     content: "Return To Business Credit Builder",
     previous: true,
     next: true,
+    url: "/step4/dun-bradstreet",
+    preUrl: "/step2/wrap",
 }
 interface Option {
     label: string;

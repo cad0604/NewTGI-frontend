@@ -64,6 +64,8 @@ const footerContent = {
     content: "Return To Business Credit Builder",
     previous: true,
     next: true,
+    url: "/step4/chex",
+    preUrl: "/step4/equifax",
 }
 interface Option {
     label: string;

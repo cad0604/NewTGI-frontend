@@ -29,12 +29,12 @@ const establish: DataInterface[] = [
 const start = [];
 
 const monitor: DataInterface[] = [
-    { name: "Credit Monitoring", url: "#" },
-    { name: "Monitor Dun & Bradstreet", url: "#" },
-    { name: "Monitor Business Experian", url: "#" },
-    { name: "Monitor Business Equifax", url: "#" },
-    { name: "Request Lexis Nexis report", url: "#" },
-    { name: "Request Chex Systems Report", url: "#" },
+    { name: "Credit Monitoring", url: "/step4/credit", },
+    { name: "Monitor Dun & Bradstreet", url: "/step4/dun-bradstreet" },
+    { name: "Monitor Business Experian", url: "/step4/experian" },
+    { name: "Monitor Business Equifax", url: "/step4/equifax" },
+    { name: "Request Lexis Nexis report", url: "/step4/lexis-nexis" },
+    { name: "Request Chex Systems Report", url: "/step4/chex" },
 ];
 
 const bulding = [];
@@ -75,7 +75,7 @@ export const MonitorReportForm = () => (
             <p className="text-blue-500">Step3</p>
             <div className="flex flex-row w-full pl-2">
                 <div className="flex w-[30rem] justify-start text-md my-2"><h3>Start Building: </h3></div>
-                <div className="flex w-full justify-end"><div className="h-8 text-blue-600">Tier1 </div></div>
+                <div className="flex w-full justify-end"><div className="h-8 text-blue-600"><Link href={"/step7/page1-min"}>Tier1</Link> </div></div>
             </div>
             {/* step 4 */}
             <p className="text-blue-500">Step4</p>

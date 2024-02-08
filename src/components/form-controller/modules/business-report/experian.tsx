@@ -86,6 +86,7 @@ const footerContent = {
     previous: true,
     next: true,
     url: "/step2/equifax",
+    preUrl: "/step2/dun-bradstreet",
 }
 
 export const BusinessReportExperian = () => {

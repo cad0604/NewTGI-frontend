@@ -84,6 +84,7 @@ const footerContent = {
     previous: true,
     next: true,
     url: "/step1/build-business-email",
+    preUrl: "/step1/build-business-ein",
 }
 
 export const BuildBusinessPhone = () => {
