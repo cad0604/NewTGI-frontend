@@ -96,7 +96,7 @@ export const MonitorReportForm = () => (
                 <div className="flex w-full justify-end"><div className="h-8 text-blue-600">Tier2 </div></div>
             </div>
             {/* step 6 */}
-            <p className="text-blue-500">Step4</p>
+            <p className="text-blue-500">Step6</p>
             <div className="flex flex-row w-full pl-2">
                 <div className="flex w-[30rem] justify-start text-md my-2"><h3>Advance Building: </h3></div>
                 <div className="flex w-full justify-end"><div className="h-8 text-blue-600">Tier3 </div></div>
