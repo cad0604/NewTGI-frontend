@@ -196,7 +196,7 @@ export const AccountPackageStep1Form = () => {
           </div>
 
           <div className="flex w-full rounded-[5rem] mt-28">
-            <Link href={"/leads/business-credit/add-client/option2"} style={{ height: '5rem', width: '100%' }}>
+            <Link href={"/step1/build-business-credit"} style={{ height: '5rem', width: '100%' }}>
               <Button style={{ height: '5rem', backgroundColor: 'rgb(46, 45, 45)', borderRadius: '2rem', fontSize: '2rem' }} onClick={() => { ; }}>CONTINUE</Button>
             </Link>
           </div>

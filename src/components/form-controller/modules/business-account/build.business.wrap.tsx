@@ -29,6 +29,7 @@ const footerContent = {
     content: "Return To Business Credit Builder",
     previous: true,
     next: true,
+    url: "/step1/monitor-report",
 }
 
 export const BuildBusinessWrap = () => {

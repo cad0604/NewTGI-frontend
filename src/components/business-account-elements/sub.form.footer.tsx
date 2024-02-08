@@ -10,6 +10,7 @@ interface SubFormFooterProps {
         content: string,
         previous: boolean,
         next: boolean,
+        url: string,
     }
 }
 
@@ -26,7 +27,9 @@ export const SubFormFooter: React.FC<SubFormFooterProps> = (props) => {
                     }
                     {props.content.next &&
                         <div className="flex w-36">
-                            <Button variant="outlined" endIcon={<ArrowRight />} color="success" size="small">Next</Button>
+                            {/* <Link href={"/step1/build-business-credit"} > */}
+                                <Button variant="outlined" href={props.content.url} endIcon={<ArrowRight />} color="success" size="small">Next</Button>
+                            {/* </Link> */}
                         </div>
                     }
                 </div>

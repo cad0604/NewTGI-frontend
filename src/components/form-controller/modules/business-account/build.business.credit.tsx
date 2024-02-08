@@ -41,6 +41,7 @@ const footerContent = {
     content: "Return To Business Credit Builder",
     previous: false,
     next: true,
+    url: "/step1/build-business-address",
 }
 interface Option {
     label: string;

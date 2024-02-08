@@ -73,6 +73,7 @@ const footerContent = {
     content: "Return To Business Credit Builder",
     previous: true,
     next: true,
+    url: "/step1/build-business-license",
 }
 
 export const BuildBusinessEmail = () => {

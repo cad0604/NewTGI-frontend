@@ -53,7 +53,7 @@ export const ACContextProvider = ({
   const [h4, SetMobileH4] = useState("");
   const router = useRouter();
   const pathname = usePathname();
-  const isVisible = pathname === "/leads/business-credit/add-client/option3";
+  const isVisible = pathname === "/admin/option3";
   const page = () => {
     const currentPage =
       DesktopBusinessCreditAddClientPages[pathname as keyof DesktopBusinessCreditAddClientPagesType] ||

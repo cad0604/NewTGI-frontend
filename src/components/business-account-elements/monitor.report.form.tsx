@@ -7,23 +7,23 @@ interface DataInterface {
     url: string,
 }
 const fundability: DataInterface[] = [
-    { name: "Business name", url: "#" },
-    { name: "Business Address", url: "#" },
-    { name: "Business Entity", url: "#" },
-    { name: "EIN#", url: "#" },
-    { name: "Business Phone # & 411 Listing", url: "#" },
-    { name: "Website & Email", url: "#" },
-    { name: "Business License", url: "#" },
-    { name: "Business Bank Account", url: "#" },
-    { name: "Bussiness Merchant Account", url: "#" },
-    { name: "Wrap", url: "#" },
+    { name: "Business name", url: "/step1/build-business-credit" },
+    { name: "Business Address", url: "/step1/build-business-address" },
+    { name: "Business Entity", url: "/step1/build-business-entry" },
+    { name: "EIN#", url: "/step1/build-business-ein" },
+    { name: "Business Phone # & 411 Listing", url: "/step1/build-business-phone" },
+    { name: "Website & Email", url: "/step1/build-business-email" },
+    { name: "Business License", url: "/step1/build-business-license" },
+    { name: "Business Bank Account", url: "/step1/build-business-bank" },
+    { name: "Bussiness Merchant Account", url: "/step1/build-business-merchant" },
+    { name: "Wrap", url: "/step1/build-business-wrap" },
 ];
 
 const establish: DataInterface[] = [
-    { name: "Dun & Bradstreet", url: "#" },
-    { name: "Business Experian", url: "#" },
-    { name: "Business Equifax", url: "#" },
-    { name: "Reporting - How to fix businesss credit", url: "#" },
+    { name: "Dun & Bradstreet", url: "/step2/dun-bradstreet" },
+    { name: "Business Experian", url: "/step2/experian" },
+    { name: "Business Equifax", url: "/step2/equifax" },
+    { name: "Reporting - How to fix businesss credit", url: "/step2/wrap" },
 ];
 
 const start = [];
