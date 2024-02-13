@@ -93,19 +93,19 @@ export const MonitorReportForm = () => (
             <p className="text-blue-500">Step5</p>
             <div className="flex flex-row w-full pl-2">
                 <div className="flex w-[30rem] justify-start text-md my-2"><h3>Building Credit: </h3></div>
-                <div className="flex w-full justify-end"><div className="h-8 text-blue-600">Tier1 </div></div>
+                <div className="flex w-full justify-end"><div className="h-8 text-blue-600"><Link href={"/step7/page2-full"}>Tier2 </Link> </div></div>
             </div>
             {/* step 6 */}
             <p className="text-blue-500">Step4</p>
             <div className="flex flex-row w-full pl-2">
                 <div className="flex w-[30rem] justify-start text-md my-2"><h3>Advance Building: </h3></div>
-                <div className="flex w-full justify-end"><div className="h-8 text-blue-600">Tier1 </div></div>
+                <div className="flex w-full justify-end"><div className="h-8 text-blue-600"><Link href={"/step7/page3-full"}>Tier3</Link> </div></div>
             </div>
             {/* step 7 */}
             <p className="text-blue-500">Step7</p>
             <div className="flex flex-row w-full pl-2">
                 <div className="flex w-[30rem] justify-start text-md my-2"><h3>Revolving Account: </h3></div>
-                <div className="flex w-full justify-end"><div className="h-8 text-blue-600">Tier1 </div></div>
+                <div className="flex w-full justify-end"><div className="h-8 text-blue-600"><Link href={"/step7/page4-full"}>Tier4 </Link> </div></div>
             </div>
         </div>
     </>
